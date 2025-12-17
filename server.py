@@ -439,14 +439,3 @@ def rag_retrieval_tool(query: str, session_id: str = None, path: str = None, bot
             print(f"CRITICAL ERROR in rag_retrieval_tool: {e}")
         
         return f"Error retrieving context from Pinecone: {e}"
-
-
-
-
-if __name__ == "__main__":
-    # mcp.run(transport="sse", port=8005)
-    mcp.run(transport="stdio")
-    # mcp.run(transport="streamable-http", port=8005)
-
-
-
